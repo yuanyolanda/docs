@@ -530,7 +530,7 @@ $result = $shakearound->material->uploadImage(__DIR__ . '/stubs/image.jpg');
 
 方法
 
-> $shakearound->relation->bindPage(array $deviceIdentifier, array $pageIds)
+> $shakearound->relation->bindPages(array $deviceIdentifier, array $pageIds)
 
 参数
 
@@ -540,9 +540,9 @@ $pageIds 页面的id列表，索引数组
 示例
 
 ```php
-$result = $shakearound->relation->bindPage(['device_id' => 10011], [12345, 23456, 334567]);
+$result = $shakearound->relation->bindPages(['device_id' => 10011], [12345, 23456, 334567]);
 // 或
-$result = $shakearound->relation->bindPage(['uuid' => 'FDA50693-A4E2-4FB1-AFCF-C6EB07647825',
+$result = $shakearound->relation->bindPages(['uuid' => 'FDA50693-A4E2-4FB1-AFCF-C6EB07647825',
                                               'major' => 1002,
                                               'minor' => 1223,
 ], [12345, 23456, 334567]);
